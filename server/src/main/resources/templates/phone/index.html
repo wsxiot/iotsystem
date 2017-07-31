@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.w3.org/1999/xhtml">
+<head lang="en">
+    <title>smart home</title>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="http://cdn.bootcss.com/jquery-mobile/1.3.2/jquery.mobile.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" th:href="@{/phone/css/index.css}"/>
+
+    <script src="http://cdn.bootcss.com/jquery/2.1.1/jquery.min.js"></script>
+    <script th:src="@{/phone/js/index.js}"></script>
+    <script src="http://cdn.bootcss.com/jquery-mobile/1.3.2/jquery.mobile.min.js"></script>
+</head>
+<body>
+<div data-role="page" id="smart" data-theme="e" data-position="fixed">
+    <div data-role="header" data-theme="b">
+        <h1> smart home</h1>
+        <button id="signout" class="ui-btn-right">退出</button>
+    </div>
+
+    <div role="main" class="ui-content">
+        <div id="turn" style="height:200px;background:#FFFF99 ;text-align:center">
+            <img th:src="@{/phone/img/bg.jpg}" width="100%" height="200px"/>
+        </div>
+        <br/>
+        <p id="run">智能家居 让生活更可控</p>
+        <div data-role="content">
+            <ul data-role="listview" data-header-theme="b" data-theme="e">
+                <br/>
+                <li>
+                    <div>我的网关</div>
+                    <span class="ui-li-count">2</span>
+                    <ul>
+                        <li><a href="javascript:;">请选择网关</a></li>
+                        <ul id="glistul" data-role="listview" data-inset="true" data-theme="c">
+                        </ul>
+                    </ul>
+                </li>
+                <li>
+                    <div>状态</div>
+                    <span class="ui-li-count">3</span>
+                    <ul>
+                        <div class="th"><h3>温度</h3><label id="temp">0</label></div>
+                        <div class="th"><h3>湿度</h3><label id="humi">0</label></div>
+                        <div class="th"><h3>光照</h3><label id="light">0</label></div>
+                    </ul>
+                </li>
+                <li>
+                    <div>控制</div>
+                    <span class="ui-li-count">3</span>
+                    <ul>
+                        <div>
+                            <div style="width:40%"><h3 align="left">客厅灯</h3></div>
+                            <div style="width:60%" data-role="controlgroup" data-type="horizontal" align="right">
+                                <button id="lledon">开</button>
+                                <button id="lledoff">关</button>
+                            </div>
+                        </div>
+                        <div>
+                            <div style="width:40%"><h3 align="left">卧室灯</h3></div>
+                            <div style="width:60%" data-role="controlgroup" data-type="horizontal" align="right">
+                                <button id="bledon">开</button>
+                                <button id="bledoff">关</button>
+                            </div>
+                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div data-role="footer" data-position="fixed" data-theme="b">
+        <p> @ iot 2014-1 in sdust</p>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+#!/bin/sh
+
+ifconfig wlan0 down
+killall wpa_supplicant
+killall udhcpc
+ifconfig eth0 up
+echo -e "IPADDR=192.168.134.250\nNETMASK=255.255.255.0\nGATEWAY=192.168.134.1" > /etc/net.conf
+echo "nameserver 8.8.8.8" > /etc/resolv.conf
+/sbin/net_set &
+sync

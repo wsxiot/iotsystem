@@ -1,0 +1,9 @@
+- version：1.0
+- 这是一个物联网系统，包括服务器（连接网关），网站服务器，电脑网页，微信网页，android端，网关端
+- 电脑网页：bootrap，jquery
+- 微信网页：jquery-mobile，jquery
+- 服务器：jdk1.8
+- 网站服务器：jdk1.8，springboot，mysql，jpa，hibernate，thymeleaf
+- 网关端：qt4.8
+- android端；除android端和传感器，以上全附源码
+- 传感器：山科智汇试验箱

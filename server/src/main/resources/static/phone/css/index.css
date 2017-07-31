@@ -1,0 +1,30 @@
+/* CSS Document */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.div-inline {
+    display: inline
+}
+
+#signin form {
+    width: 90%;
+}
+
+.th {
+    border: 2px solid #0099FF;
+    border-radius: 45px;
+    margin-top: 30px;
+    text-align: center;
+    background-color: snow;
+}
+
+#smart #run {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    animation: run 2s infinite;
+}

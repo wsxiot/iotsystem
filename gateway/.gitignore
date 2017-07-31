@@ -1,0 +1,8 @@
+*.o
+*~
+*.swp
+GateWay.pro.user
+GateWay
+qrc_*
+moc_*
+ui_*
